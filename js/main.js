@@ -24,3 +24,8 @@ function prevSlide() {
     slides[index].classList.add('active');
     slidesText[index].classList.add('active');
 }
+
+function menuToggle() {
+    var nav = document.getElementById('navbar');
+    nav.classList.toggle('active');
+}
