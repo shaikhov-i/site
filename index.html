@@ -20,22 +20,48 @@
             </ul>
         </header>
         <div class="content">
-            <div class="bannerText">
-                <div>
+            <div class="bannerText" id="slideshowtexts">
+                <div class="active">
                     <h2>EAT Healthy <br> Stay Healthy</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sit non aspernatur officiis
                         accusamus, quaerat numquam qui modi itaque accusantium, quidem animi ipsam, eveniet architecto.
                         Velit distinctio earum molestiae ullam?</p>
-                        <a href="#">Read More</a>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>EAT Your <br> Veggies</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem tempora possimus
+                        explicabo, sunt tempore perspiciatis assumenda omnis suscipit cum, doloremque incidunt laborum
+                        molestias esse nulla exercitationem officia sit, a optio commodi.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Good Food <br> Good Mood</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempore, non quas ducimus ea, quasi
+                        excepturi, reiciendis earum voluptatum assumenda modi laborum quidem in voluptates commodi. Rem
+                        vitae esse dicta.</p>
+                    <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="bannerImg">
-                <img src="images/pexels-pixabay-434258.jpg" alt="">
+            <div class="bannerImg" id="slideshow">
+                <img src="images/pexels-pixabay-434258.jpg" alt="" class="active">
+                <img src="images/pexels-bulbfish-1143754.jpg" alt="">
+                <img src="images/pexels-markus-winkler-2862154.jpg" alt="">
             </div>
+        </div>
+        <div class="icons">
+            <ul class="social">
+                <li><a href="#"><img src="images/facebook-logo.png" alt=""></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            </ul>
+            <ul class="controls">
+                <li onclick="prevSlide();"><a href="#"></a></li>
+                <li onclick="nextSlide();"><a href="#"></a></li>
+            </ul>
         </div>
     </div>
     <script src="js/main.js"></script>
 </body>
 
 </html>
-

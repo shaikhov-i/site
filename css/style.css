@@ -99,6 +99,12 @@ header ul li a.active:before {
     max-width: 500px;
     margin-right: 50px;
 }
+.content .bannerText div {
+    display: none;
+}
+.content .bannerText div.active {
+    display: initial;
+}
 .content .bannerText h2 {
     font-size: 54px;
     text-transform: uppercase;
@@ -151,4 +157,72 @@ header ul li a.active:before {
     top: 0;
     left: 0;
     transition: 0.5s;
+    opacity: 0;
+}
+.content .bannerImg img.active {
+    opacity: 1;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.icons .social,
+.icons .controls {
+    position: relative;
+    display: flex;
+}
+
+.icons .social li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.icons .social li img {
+    display: inline-block;
+    max-height: 24px;
+    transition: 0.5s ease-in-out;
+}
+.icons .social li:hover img {
+    transform: translateY(-10px);
+}
+
+.icons .controls li {
+    list-style: none;
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+}
+.icons .controls li:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    top: 16px;
+    left: 14px;
+    transform: rotate(-45deg);
+}
+.icons .controls li:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    bottom: 15px;
+    left: 14px;
+    transform: rotate(-135deg);
+}
+
+.icons .controls li:nth-child(2):before {
+    transform: rotate( 45deg);
+}
+.icons .controls li:nth-child(2):after {
+    transform: rotate( 135deg);
 }
